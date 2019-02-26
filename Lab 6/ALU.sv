@@ -1,10 +1,10 @@
 module ALU (input  logic [15:0] A, B,
-			input  logic [1:0]  Select,
+	    input  logic [1:0]  ALUK,
 			output logic [15:0] OUT);
 				
 		always_comb
 		begin
-			case (Select)
+			case (ALUK)
 			
 				2'b00:
 					OUT = A + B;	// add operation
